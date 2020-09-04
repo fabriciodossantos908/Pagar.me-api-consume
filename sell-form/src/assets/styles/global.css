@@ -1,51 +1,71 @@
 :root {
-    font-size: 55%;
+  font-size: 55%;
 
-
-    --color-background: #ececec;
-    --color-title: #0D0D0D;
-    --color-primary-highlight: #F24464;
-    --color-primary-main: #F20530;
-    --color-primary-dark: #F20519;
+  --color-background: #ececec;
+  --color-form-background: #fffefe;
+  --color-title: #0d0d0d;
+  --color-text-base: #2c2c2c;
+  --color-primary-highlight: #f24464;
+  --color-primary-main: #f20530;
+  --color-primary-dark: #f20519;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  html,
-  body,
-  #root {
-    height: 100vh;
+html,
+body,
+#root {
+  height: 100vh;
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body,
+input,
+button,
+textarea,
+li {
+  font: 500 1.6rem Poppins;
+  color: var(--color-text-base);
+}
+
+.container {
+  width: 90vw;
+  max-width: 700px;
+}
+
+/* explain this snippet */
+.fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
   }
-  
-  body {
-    background-color: var(--color-background);
+  100% {
+    opacity: 1;
   }
-  
-  #root {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 90.5%;
   }
-  
-  body,
-  input,
-  button,
-  textarea {
-    font: 500 1.6rem Poppins;
-    color: var(--color-text-base);
-  }
-  
-  .container {
-    width: 90vw;
-    max-width: 700px;
-  }
-  
-  @media (min-width: 700px) {
-    :root {
-      font-size: 62.5%;
-    }
-  }
+}

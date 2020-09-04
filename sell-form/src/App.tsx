@@ -1,12 +1,12 @@
 import React from 'react';
 
-import SneakersList from './pages/SnekearsList'
+import FormSell from './pages/FormSell'
 
 import './assets/styles/global.css'
 
 function App() {
   return (
-    <SneakersList/>
+    <FormSell />
   );
 }
 

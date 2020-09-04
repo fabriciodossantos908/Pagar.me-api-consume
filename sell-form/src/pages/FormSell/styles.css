@@ -1,0 +1,30 @@
+#formSell-container {
+  height: 60vh;
+  background-color: var(--color-form-background);
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+#formSell-container header {
+  width: 100%;
+  height: 20%;
+}
+
+#formSell-container header,
+#formSell-container footer h3 {
+  text-align: center;
+}
+
+#formSell-container section {
+  height: 70%;
+}
+
+#formSell-container footer {
+  height: 10%;
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 90.5%;
+  }
+}
